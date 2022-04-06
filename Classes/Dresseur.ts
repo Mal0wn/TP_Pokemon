@@ -5,6 +5,11 @@ export class Dresseur {
 	nom : string;
 	pokeballs: Array<Pokeball>; 
 
+	constructor(nom: string, pokeballs: Array<Pokeball>) {
+	this.nom = nom;
+	this.pokeballs = pokeballs
+	}
+
 /**
  * 
  * @param number : Methode qui va permettre d'ajouter des Pokeballs dans l'inventaire du dresseur 
@@ -17,6 +22,8 @@ export class Dresseur {
 				this.pokeballs.push(new Pokeball())
 			}	
 		}
+		console.log("Inventaire :");
+		console.log(this.pokeballs.length)
 		
 	}
 
