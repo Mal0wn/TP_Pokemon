@@ -4,14 +4,14 @@ export abstract class TypePlante implements Type {
 
 	degats: number;
 
-	calculerDegatsContreFeu(): void {
-		throw new Error("Method not implemented.");
+	calculerDegatsContreFeu(): number{
+		return this.degats / 2 ; 
 	}
-	calculerDegatsContreEau(): void {
-		throw new Error("Method not implemented.");
+	calculerDegatsContreEau(): number {
+		return this.degats * 2  ; 
 	}
-	calculerDegatsContrePlante(): void {
-		throw new Error("Method not implemented.");
+	calculerDegatsContrePlante(): number {
+		return this.degats  ; 
 	}
 
 }

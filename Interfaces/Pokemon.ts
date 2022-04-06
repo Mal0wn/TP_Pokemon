@@ -10,21 +10,22 @@ export interface Pokemon {
 /**
  * Methode qui permet au pokemon d'attaquer son adversaire et lui infliger des dégats
  */
-	attaquer() : void ;
+	attaquer(adversaire : Pokemon) : number ;
 
 /**
  * Methode qui va calculer les dégats subis par le pokemon
  */
-	subirAttaque() : void ; 
+	subirAttaque(degats : number) : void ; 
+	
 
 /**
  * Méthode qui va soigner le pokemon et lui rendre des points de PV
  */
-	soigner() : void ; 
+	soigner() : void ;
 
 /**
  * Méthode qui va permettre de changer le nom (str) du Pokemon
  */
-	renommer() : void ; 
+	renommer(value : string) : string ; 
 
 }

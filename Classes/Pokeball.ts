@@ -3,25 +3,28 @@ import { Pokemon } from "../interfaces/Pokemon";
 
 export class Pokeball {
 
-	_contient! : Pokemon;
-	_proprietaire! : Dresseur;
+	contient! : Pokemon;
+	proprietaire! : Dresseur;
 
-constructor( contient : Pokemon , proprietaire : Dresseur) {
 
-	contient = this._contient;
-	proprietaire = this._proprietaire;
-}
 
 /**
- * Donne le contenu de la Pookeball donc soit vide ou contient un Pokemon et lequel
+ * Donne le contenu de la Pokeball donc soit vide ou contient un Pokemon et lequel
  */
 	getContenu() : void {
-	
+		this.contient.nom ;
+		if ( !this.contient.nom ) {
+			console.log("La Pokeball est vide")
+		} else {
+			console.log(this.contient.nom)
+		}
 
 	};
 
-	affecterPokemon() : void {
-	
+	affecterPokemon( pokemon : Pokemon ) : void {
+		if (!this.contient.nom) {
+			this.contient.nom == pokemon.nom;
+		}
 	}
  
 
