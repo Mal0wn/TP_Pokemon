@@ -1,11 +1,11 @@
 export interface Pokemon {
 
-	_nom : string;
-	_pv : number;
-	_pvMax : number; 
-	_type : string; 
-	_captif : boolean;
-	_horsJeu : boolean;
+	nom : string;
+	pv : number;
+	pvMax : number; 
+	type : string; 
+	captif : boolean;
+	horsJeu : boolean;
 
 /**
  * Methode qui permet au pokemon d'attaquer son adversaire et lui infliger des dégats

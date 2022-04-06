@@ -16,7 +16,7 @@ constructor( contient : Pokemon , proprietaire : Dresseur) {
  * Donne le contenu de la Pookeball donc soit vide ou contient un Pokemon et lequel
  */
 	getContenu() : void {
-this.contient.nom 
+	
 
 	};
 
