@@ -2,17 +2,15 @@ import { Type } from "../interfaces/Type"
 
 export abstract class TypeEau implements Type {
 
+	degats: number;
 
-	_degats: number;
-
-
-	attaquerFeu(): void {
+	calculerDegatsContreFeu(): void {
 		throw new Error("Method not implemented.");
 	}
-	attaquerEau(): void {
+	calculerDegatsContreEau(): void {
 		throw new Error("Method not implemented.");
 	}
-	attaquerPlante(): void {
+	calculerDegatsContrePlante(): void {
 		throw new Error("Method not implemented.");
 	}
 
