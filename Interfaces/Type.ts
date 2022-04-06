@@ -1,5 +1,5 @@
 export interface Type {
-	_degats : number;
+	degats : number;
 
 
 /**
