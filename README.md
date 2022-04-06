@@ -8,7 +8,9 @@ NB : Le diagramme ne fait état que de la logique métier. Il vous appartient d'
 
 #### Répondez aux questions suivantes (sur 10 points) : NB : Il y a plus de points que nécessaire. Les points seront 'bonus'
 ##### 1. Le diagramme respecte-t-il le principe de responsabilité unique ? (1 point) 
+	Je pense que non
 ##### 2. Pourquoi ? (1 point)
+	Par exemple sur l'interface Pokemon on a la méthode soigner et renommer mais qui je pense devrais etre assigner a la class Dresseur
 ##### 3. Le diagramme respecte-t-il le principe Open/Closed ? (1 point)
 ##### 4. Pourquoi ? (1 point)
 ##### 5. Le diagramme respecte-t-il le principe de substitution de Liskov ? (1 point)
