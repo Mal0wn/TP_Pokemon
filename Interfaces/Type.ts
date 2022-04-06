@@ -5,16 +5,16 @@ export interface Type {
 /**
  * Méthode qui permet d'attaquer un adversaire de type Feu
  */
-	calculerDegatsContreFeu() : void ;
+	calculerDegatsContreFeu() : number ;
 
 /**
  * Méthode qui permet d'attaquer un adversaire de type Eau
  */
-	calculerDegatsContreEau() : void ; 
+	calculerDegatsContreEau() : number ; 
 
 /**
  * Méthode qui permet d'attaquer un adversaire de type Plante
  */
-	calculerDegatsContrePlante() : void ; 
+	calculerDegatsContrePlante() : number ; 
 
 }
