@@ -5,7 +5,6 @@ export abstract class TypeFeu implements Type {
 	
 	degats: number;
 
-
 	constructor(degats: number, ) {
 	this.degats = degats ;
 	
@@ -20,7 +19,4 @@ export abstract class TypeFeu implements Type {
 		return this.degats * 2 ; 
 	}
 	
-
-	
-
 }

@@ -16,7 +16,7 @@ NB : Le diagramme ne fait état que de la logique métier. Il vous appartient d'
 ##### 4. Pourquoi ? (1 point)
 	Alors je pense que non car des methodes ont besoin d'autre méthodes sur d'autres class pour fonctionner pour les attaques par exemple j'ai besoin du calcul de degats pour implementer la methode attaquer() sur les differents Pokemon
 ##### 5. Le diagramme respecte-t-il le principe de substitution de Liskov ? (1 point)
-	Sur le principe oui
+	Sur le principe non
 ##### 6. Pourquoi ? (1 point)
 	Selon ce que j'ai compris , l'interface Type implemente
 des methodes caracterisée sur des class abstraite type Feu Eau et Plante dnc rajouter un type (exemple : Fée ou Electrique) pourrait faire peter les autres types et faire un effet d'escalade en petant les classes pokemons
@@ -29,6 +29,11 @@ des methodes caracterisée sur des class abstraite type Feu Eau et Plante dnc ra
 ##### 10. Pourquoi ? (1 point)
 	Il me semble que pour respecter le priuncipe d'inversion des dependances il aurait fallu dans notre cas avoir une class abstraite Pokemon hors ce n'est pas le cas. De ce fait on doit implementer les methodes pour chaque class Pokemon existant , si on decide de changer une methode il faudrait la changer chez tout les pokemons alors que si la methode avait été implementé dans la class abstraite generique Pokemon la maintenance aurait été plus facile
 ##### 11. Proposez un diagramme alternatif (2 point)
+
+## Diagramme
+![diagramme](./assets/image.png)
+
+
 ##### 12. Déposez votre projet sur github et précisez le lien (1 point)
 https://github.com/Mal0wn/TP_Pokemon
 

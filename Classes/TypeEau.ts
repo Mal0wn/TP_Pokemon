@@ -5,7 +5,7 @@ export abstract class TypeEau implements Type {
 
 	degats: number;
 
-constructor(degats: number, ) {
+	constructor(degats: number, ) {
 	this.degats = degats ;
 	
 	}
