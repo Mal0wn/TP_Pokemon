@@ -5,6 +5,14 @@ export abstract class TypeEau implements Type {
 
 	degats: number;
 
+constructor(degats: number, ) {
+	this.degats = degats ;
+	
+	}
+
+
+	
+
 	calculerDegatsContreFeu(): number{
 		return this.degats * 2 ; 
 	}

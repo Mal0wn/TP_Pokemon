@@ -9,15 +9,15 @@ export class Salameche extends TypeFeu implements Pokemon {
 	captif: boolean; 
 	horsJeu: boolean;
 	nom: string;
-	degats: number;
+	
 
 	constructor(pvMax: number, degats: number) {
-	super();
+	super(degats);
 	this.captif = false;
 	this.horsJeu = false;
-	this.nom = "Bulbizarre";
-	this.pv = 100; 
-	this.pvMax = 100;
+	this.nom = "Salameche";
+	this.pv = pvMax; 
+	this.pvMax = pvMax;
 	this.type = "Type Feu";
 	}
 

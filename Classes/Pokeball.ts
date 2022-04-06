@@ -6,6 +6,11 @@ export class Pokeball {
 	contient! : Pokemon;
 	proprietaire! : Dresseur;
 
+	constructor(contient: Pokemon, proprietaire: Dresseur) {
+	this.contient = contient ;
+	this.proprietaire = proprietaire;
+	}
+
 
 
 /**

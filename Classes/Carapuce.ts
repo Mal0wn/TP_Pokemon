@@ -9,19 +9,19 @@ export class Carapuce extends TypeEau implements Pokemon {
 	captif: boolean; 
 	horsJeu: boolean;
 	nom: string;
-	degats: number;
 
 	constructor(pvMax: number, degats: number) {
-	super();
+	super(degats);
 	this.captif = false;
 	this.horsJeu = false;
-	this.nom = "Bulbizarre";
-	this.pv = 100; 
-	this.pvMax = 100;
+	this.nom = "Carapuce";
+	this.pv = pvMax ;
+	this.pvMax = pvMax;
 	this.type = "Type Eau";
 	}
 
 	attaquer(adversaire : Pokemon): number {
+	console.log("Attaque")
 		if( adversaire.type == "Type Plante") {
 		return this.calculerDegatsContrePlante()
 		} else if ( adversaire.type == "Type Feu") {
@@ -29,6 +29,7 @@ export class Carapuce extends TypeEau implements Pokemon {
 		} else {
 			return this.calculerDegatsContreEau()
 		}
+		
 	}
 
 	subirAttaque( degats : number ): void {

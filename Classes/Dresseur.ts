@@ -19,7 +19,7 @@ export class Dresseur {
 			if(this.pokeballs.length > 5) {
 				console.log("Inventaire Plein");
 			} else {
-				this.pokeballs.push(new Pokeball())
+				this.pokeballs.push(new Pokeball(null , this))
 			}	
 		}
 		console.log("Inventaire :");

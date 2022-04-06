@@ -5,6 +5,11 @@ export abstract class TypeFeu implements Type {
 	
 	degats: number;
 
+
+	constructor(degats: number, ) {
+	this.degats = degats ;
+	
+	}
 	calculerDegatsContreFeu(): number{
 		return this.degats  ; 
 	}
