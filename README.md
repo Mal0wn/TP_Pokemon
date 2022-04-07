@@ -38,3 +38,81 @@ des methodes caracterisée sur des class abstraite type Feu Eau et Plante dnc ra
 https://github.com/Mal0wn/TP_Pokemon
 
 
+
+
+
+
+
+
+
+
+
+##### diagramme uml a copier coller
+
+@startuml
+skinparam classAttributeIconSize 0
+interface Pokemon {
+ nom!: str
+ pv: int
+ pvMax: num
+ type: str
+ captif: bool
+ horsJeu: bool
+ attaquer()
+ subirAttaque()
+
+}
+interface Type {
+ degats: num
+ calculerDegatsContreFeu(): num
+ calculerDegatsContreEau():num
+ calculerDegatsContrePlante(): num
+}
+abstract class TypeAC {
+}
+abstract class TypeFeu {
+}
+abstract class TypeEau {
+}
+abstract class TypePlante {
+}
+abstract class PokemonAC {
+}
+class Salameche {
+}
+class Bulbizarre {
+}
+class Carapuce {
+}
+note bottom: constructor : pvMax, degats
+class Pokeball {
+ contient!: Pokemon
+ proprietaire!: Dresseur
+ +getContenu()
+ +affecterPokemon()
+}
+class Dresseur {
+ -nom: str
+ -inventaire:[]
+ +ajouterPokeballs()
+ +capturer( Pokemon )
+ +getPokemons()
+ +soigner()
+ +renommer()
+}
+TypeAC -up-|> Type
+TypeFeu -up-|> TypeAC
+TypeEau -up-|> TypeAC
+TypePlante -up-|> TypeAC
+Salameche -up-|> TypeFeu
+Carapuce -up-|> TypeEau
+Bulbizarre -up-|> TypePlante
+Salameche --|> PokemonAC
+Carapuce --|> PokemonAC
+Bulbizarre --|> PokemonAC
+PokemonAC --|> Pokemon
+Dresseur "1" -- "0..6" Pokeball
+Pokeball "1" -- "0..1" Pokemon
+@enduml
+
+
