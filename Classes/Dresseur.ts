@@ -19,7 +19,7 @@ export class Dresseur {
 			if(this.pokeballs.length > 5) {
 				console.log("Inventaire Plein");
 			} else {
-				this.pokeballs.push(new Pokeball(null , this))
+				this.pokeballs.push(new Pokeball(this))
 			}	
 		}
 		console.log("Inventaire :");
@@ -36,10 +36,13 @@ export class Dresseur {
 			//Je map mon inventaire de pokeball
 			this.pokeballs.map(pokeball => {
 			// Si la pokeball de contient pas de pokemon
-				if(!pokeball.contient){
+				if(!pokeball.contient && !pokemon.captif){
 					//J'affecte le Pokemoon a la pokeball
 					pokeball.affecterPokemon(pokemon);
 					console.log("Félicitation " + pokemon.nom + " à été capturé !");
+					pokemon.captif = true;
+				} else {
+				console.log("alacon")
 				}
 			})
 		}catch{

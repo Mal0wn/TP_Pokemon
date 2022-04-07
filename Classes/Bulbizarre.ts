@@ -22,6 +22,7 @@ export class Bulbizarre extends TypePlante implements Pokemon {
 
 
 	attaquer(adversaire : Pokemon): number {
+	console.log(this.nom +" attaque " + adversaire.nom)
 		if( adversaire.type == "Type Plante") {
 		return this.calculerDegatsContrePlante()
 		} else if ( adversaire.type == "Type Feu") {
@@ -36,12 +37,15 @@ export class Bulbizarre extends TypePlante implements Pokemon {
 		if (this.pv <= 0) {
 			this.horsJeu = true;
 			console.log("Pokemon HS")
-		} 
+		} else {
+		console.log("Il reste " + this.pv + " a " + this.nom)
+		}
 	}
 
 	soigner(): void {
 		if (this.pv < 100) {
 		this.pv = this.pvMax;
+		console.log(this.nom +" a été soigné")
 		} else {
 		throw new Error("Le pokemon est full santé")
 		}

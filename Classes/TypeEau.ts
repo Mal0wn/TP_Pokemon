@@ -10,9 +10,6 @@ export abstract class TypeEau implements Type {
 	
 	}
 
-
-	
-
 	calculerDegatsContreFeu(): number{
 		return this.degats * 2 ; 
 	}
